@@ -1,5 +1,6 @@
 # Word-Predictor
-Using a trie we predict the next closest words to the input. Warning : No ML algorithm involved. 
+Using a trie we predict the next closest words to the input. 
+## Warning : No ML algorithm involved. 
 
 
 # Usage 
@@ -11,4 +12,4 @@ Using a trie we predict the next closest words to the input. Warning : No ML alg
 
 # Version
 V1 : A basic word predictor which outputs the closest words using a simple BFS.
-Newer versions might inlcude according to the usage of user. 
+Newer versions might include according to the usage of user. 
