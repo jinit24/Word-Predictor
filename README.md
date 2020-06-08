@@ -1,4 +1,4 @@
-# Word-Predictor
+# Word-Predictor / Auto-Complete
 Using a trie we predict the next closest words to the input. 
 ## Warning : No ML algorithm involved. 
 
