@@ -12,6 +12,8 @@ int main(){
     filename = "assets/static/unigram_freq.csv"; 
     file.open(filename.c_str()); 
 
+    cout << "########################################" << endl;
+    cout << "Pre-processing" << endl;
     cout << "Pushing words to trie." << endl;
     while (file >> word) 
     { 
@@ -19,7 +21,9 @@ int main(){
         insertwWithFreq(word.substr(0,found),stoll(word.substr(found+1,word.size())));
 
     } 
-    cout << "Pushed all words!" << endl << endl;
+    cout << "Pushed all words!" << endl;
+    cout << "########################################" << endl << endl;
+
 
     cout << "########################################" << endl;
     cout << "Welcome! Here are the queries you can use" << endl;
