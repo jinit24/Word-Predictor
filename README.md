@@ -1,5 +1,5 @@
 # Word-Predictor / Auto-Complete
-Using a trie we predict the word based on given input.
+For a given input we try to predict the word using a trie.
 
 # Usage 
 1. Clone the repository.
@@ -38,4 +38,5 @@ Predictions are : kids kingdom kitchen kill kim
 
 # Version
 V2 : A basic word predictor which uses pre-defined frequency of words to predict next possible word.
+A higher frequency of word is given preference.
 Newer versions might include according to the frequency of user. 
