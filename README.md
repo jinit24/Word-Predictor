@@ -14,8 +14,11 @@ make
 ```
 4. You should see :
 ```
+########################################
+Pre-processing
 Pushing words to trie.
 Pushed all words!
+########################################
 
 ########################################
 Welcome! Here are the queries you can use
