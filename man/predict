@@ -1,0 +1,26 @@
+PREDICT
+
+NAME
+    predict - used to predict rest of the input word
+
+SYNOPSIS
+       predict [word] -[options]
+
+DESCRIPTION 
+       returns a list of possible completed words based given input
+      
+       -v 
+            verbose gives detailed description of the list
+
+EXAMPLE
+       predict kin
+       This should return the query for the word kin 
+
+
+Press q to exit
+
+
+
+
+
+

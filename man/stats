@@ -1,0 +1,26 @@
+STATS
+
+NAME
+    stats - displays basic stastistics about the trie
+
+SYNOPSIS
+      stats
+
+DESCRIPTION 
+      Gives details about
+      Most frequent word
+      Max frequency
+      Total number of distinct words
+      Total number of words
+
+
+Press q to exit
+
+
+
+
+
+
+
+
+

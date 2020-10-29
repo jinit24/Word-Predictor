@@ -15,16 +15,25 @@ using namespace std;
 		}
 	};
 
+	struct stat{
+		string most_frequent_word;
+		int max_frequency;
+		int total_distinct_words;
+		int total_words;
+	};
+
+
 	// Global Variable - root of trie
 	extern node* root;
+	extern stat stats;
 
 	// Inserting Algorithms
-	extern void insertwWithFreq(string x, long long int freq);
+	extern void insertWithFreq(string x, long long int freq);
 	extern void insert(string x);
 
 	// Prediction Algorithms
-	extern vector <string> predusingf(string x);
-	extern vector <string> pred(string x);
+	extern vector <pair<int,string>> predusingf(string x, int verbose);
+	// extern vector <string> pred(string x);
 
 	// Miscellaneous Algorithms
 	extern void deleteWord(string x);

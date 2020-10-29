@@ -1,0 +1,24 @@
+HELP
+
+DESCRIPTION
+	Based on a given input file we make a trie. 
+	Then for any given input we try to predict what could be the word. 
+	You can go through the traversal, prediction and insertion algorithm in assets folder.
+
+COMMANDS
+	predict [word] [options]
+	add     [word] [frequency]
+	stats
+	quit 
+
+	Type man [command] to know more
+
+Press q to exit
+
+
+
+
+
+
+
+

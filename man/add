@@ -1,0 +1,31 @@
+ADD
+
+NAME
+    add - used to add a word to the trie
+
+SYNOPSIS
+       add [word] [frequency]
+
+DESCRIPTION 
+       adding new words to the trie.
+       If a word exists and frequency is provided, the frequency is overwritten.
+      
+       frequency
+            add a word with a specific frequency
+
+EXAMPLE
+    
+       add bonjour
+       Adds bonjour to the trie   
+	
+       add jinit 100
+       This should add the word jinit with a frequency 100
+
+
+Press q to exit
+
+
+
+
+
+
