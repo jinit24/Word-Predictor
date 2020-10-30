@@ -241,7 +241,7 @@ vector <pair<int,string>> predusingf(string x, int verbose = 0){
 	vector <pair<int,string>> temp = merge(exact,one_mistake,1);
 	if(x.size()<3)
 		return	temp; 
-	vector <pair<int,string>> ans = merge(temp,one_delete);
+	vector <pair<int,string>> ans = merge(temp,one_delete,1);
 
 	return ans;
 }
