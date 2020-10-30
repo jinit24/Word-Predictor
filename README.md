@@ -51,6 +51,14 @@ Predictions are : kind king in into know
 
 6. To add words apart from the input file, you can use - add 'word' 'frequency'  
 You can leave frequency blank, a default value if assigned.
+````
+>> add papyrus
+papyrus added!
+````
+````
+>> add papaya 1000
+papaya added!
+````
 
 7. stats can be used to get an idea of the data provided.
 ````
