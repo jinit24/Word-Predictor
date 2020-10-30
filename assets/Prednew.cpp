@@ -153,7 +153,8 @@ vector <pair<int,string>> pred_helper_one_delete(string x){
 	for(auto temp : y){
 		vector <pair<int,string>> a = predusingf_helper(temp,-1,2,1);
 		for(auto it : a){
-			pq.push(it);
+			if(it.second!=x)
+				pq.push(it);
 		}
 	}
 
@@ -193,8 +194,10 @@ vector <pair<int,string>> merge(vector <pair<int,string>> A, vector <pair<int,st
 			merged.push_back(it);
 	}
 
-	for(auto &it : B)
-		merged.push_back(it);
+	for(auto &it : B){
+		if(find (merged.begin(), merged.end(), it)==merged.end() )
+			merged.push_back(it);
+	}
 
 	sort(merged.begin()+count, merged.end(), greater < pair<int,string> >());
 
