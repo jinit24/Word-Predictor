@@ -211,12 +211,17 @@ vector <pair<int,string>> predusingf(string x, int verbose = 0){
 	// Prediction using x is an exact prefix of the output
 	exact = predusingf_helper(x,-1,5,0);
 
+
+
 	if(verbose){
 		cout << "Input is an exact prefix : ";
 		for(auto &it : exact)
 			cout << it.second << " ";
 		cout << endl;
 	}
+
+	if(x.size()<3)
+		return exact;
 
 	one_mistake = pred_helper_one_mistake(x);
 
@@ -227,15 +232,13 @@ vector <pair<int,string>> predusingf(string x, int verbose = 0){
 		cout << endl;
 	}
 
-	if(x.size()>=3){
-		one_delete = pred_helper_one_delete(x);
+	one_delete = pred_helper_one_delete(x);
 
-		if(verbose ){
-			cout << "After assuming exactly one extra character: ";
-			for(auto &it : one_delete)
-				cout << it.second << " ";
-			cout << endl;
-		}
+	if(verbose ){
+		cout << "After assuming exactly one extra character: ";
+		for(auto &it : one_delete)
+			cout << it.second << " ";
+		cout << endl;
 	}
 	
 	vector <pair<int,string>> temp = merge(exact,one_mistake,1);
